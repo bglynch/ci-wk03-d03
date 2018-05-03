@@ -18,12 +18,22 @@
         <div class="row">
             <h1 class="heading">The Weather of Today</h1>
         </div>
+        <img id="icon" src=""/>
         <div id="weather"></div>
-        <img src="http://openweathermap.org/img/w/10n.png">
-        <form id="frm1" action="/action_page.php">
+        <!--<img src="http://openweathermap.org/img/w/10n.png">-->
+        <form id="frm1" onsubmit="myCity(); return false" action="#">
             What City: <input type="text" name="fname" id="uniqueID">
-                       <input type="button" onclick="myCity()" value="Submit">
+                       <input type="submit" value="Submit">
         </form>
+        <!--Matts Solution
+        <form id="cityForm">
+            <input type="text" name="city"/>
+        </form>
+        <button id="submit" onclick="submitCity()">Check</button>
+        <div id="data">
+        -->
+        </div>
+        
     </div>
 </body>
 
